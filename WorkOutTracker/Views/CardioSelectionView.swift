@@ -16,7 +16,9 @@ struct CardioSelectionView: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing:20) {
                     ForEach(activitiesArray.filter({$0.group == .cardio}), id: \.id){group in
-                        NavigationLink(destination: viewForSubcategory(group)) {
+                        //EXPLAIN THIS
+                        NavigationLink(destination: subcategoryViewManager.view(for:(group))) {
+                            //AND THIS
                             GenricCard(name: group.name, imageName: group.image)
                                 
                                 .frame(minWidth: 170)

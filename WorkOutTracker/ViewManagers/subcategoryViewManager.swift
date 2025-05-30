@@ -6,24 +6,31 @@
 //
 
 import Foundation
-import SwiftUICore
+import SwiftUI
 
-@ViewBuilder
 
-func viewForSubcategory(_ activity: Activity) -> some View {
+struct subcategoryViewManager {
     
-    switch (activity.group, activity.name){
+    //EXPLAIN THIS WHOLE CODE 
+    static let activityViews: [String: () -> AnyView] = [
         
-    case(.cardio, "Running"):
-        runningView()
+        "Running": { AnyView(runningView()) }
         
+        //add others
         
-        
-
-    default:
-        Text("Coming soon for \(activity.name)")
-        
+    ]
+    
+    @ViewBuilder
+    static func view(for activity: Activity) -> some View {
+        if let createView = activityViews[activity.name] {
+            createView()
+        }
+        else{
+            Text("View coming soon for \(activity.name)")
+        }
     }
+    
+    
     
 }
 
