@@ -10,16 +10,24 @@ import SwiftUICore
 
 @ViewBuilder
 
-func viewForSubcategory(_ group: CardioActivity) -> some View {
+func viewForSubcategory(_ activity: Activity) -> some View {
     
-    switch group.name{
+    switch (activity.group, activity.name){
         
-    case "Running": runningView()
+    case(.cardio, "Running"):
+        runningView()
         
+        
+        
+
     default:
-        Text("Coming soon for \(group.name)")
+        Text("Coming soon for \(activity.name)")
         
     }
     
 }
+
+
+    
+
 

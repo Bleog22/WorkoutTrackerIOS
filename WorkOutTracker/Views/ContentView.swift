@@ -31,6 +31,7 @@ struct ContentView: View {
                             GenricCard(name: card.name, imageName: card.image)
                             
                         }
+                        .frame(maxWidth:320)
                         
                         
                         .padding()
