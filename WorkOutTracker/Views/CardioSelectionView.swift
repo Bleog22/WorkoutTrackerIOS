@@ -1,5 +1,5 @@
 //
-//  cardioSelectionView.swift
+//  CardioSelectionView.swift
 //  WorkOutTracker
 //
 //  Created by Bryan Galaviz on 5/29/25.
@@ -7,12 +7,38 @@
 
 import SwiftUI
 
-struct cardioSelectionView: View {
+struct CardioSelectionView: View {
+    var columns = [GridItem(.adaptive(minimum: 170), spacing: 20)]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+      
+        NavigationView() {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing:20) {
+                    ForEach(cardioActivityArray, id: \.id){group in
+                        NavigationLink(destination: viewForSubcategory(group)) {
+                            GenricCard(name: group.name, imageName: group.image)
+                                
+                                .frame(minWidth: 170)
+                            
+                                .padding(.horizontal)
+                        }
+                        
+                    }
+                    
+                    .padding()
+                }
+            }
+            .navigationTitle(Text("Cardio Activities"))
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        
+        
+        
+        
     }
 }
 
 #Preview {
-    cardioSelectionView()
+  CardioSelectionView( )
 }

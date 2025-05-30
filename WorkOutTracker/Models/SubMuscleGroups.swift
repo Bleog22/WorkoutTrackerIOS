@@ -9,7 +9,7 @@ import Foundation
 
 
 //Creating a new struct with 2 properties name (type string), image (type string)
-struct CardioGroups: Identifiable {
+struct CardioActivity: Identifiable {
     
     var id = UUID()
     var name: String
@@ -17,14 +17,30 @@ struct CardioGroups: Identifiable {
     
 }
 
-let cardioGroupsArray: [CardioGroups] = [
-    CardioGroups(name: "Running", image: "running"),
-    CardioGroups(name: "Jump Rope", image: "jumpRope"),
-    CardioGroups(name: "Cycling", image: "cycling"),
-    CardioGroups(name: "Swimming", image: "swimming"),
-    CardioGroups(name: "Elliptical", image: "elliptical"),
-    CardioGroups(name: "Boxing", image: "boxing"),
-    CardioGroups(name: "Walking", image: "walking"),
-    CardioGroups(name: "Stairs", image: "stairs")
+let cardioActivityArray: [CardioActivity] = [
+    CardioActivity(name: "Running", image: "running"),
+    CardioActivity(name: "Jump Rope", image: "jumpRope"),
+    CardioActivity(name: "Cycling", image: "cycling"),
+    CardioActivity(name: "Swimming", image: "swimming"),
+    CardioActivity(name: "Elliptical", image: "elliptical"),
+    CardioActivity(name: "Boxing", image: "boxing"),
+    CardioActivity(name: "Walking", image: "walking"),
+    CardioActivity(name: "Stairs", image: "stairs")
 ]
+
+//Chest struct
+struct ChestActivity: Identifiable {
+    var id = UUID()
+    var name: String
+    var image: String
+}
+
+let chestActivityArray: [ChestActivity] = [
+//    ChestActivity(name: String, image: String)
+    
+    
+    
+    
+]
+
 
