@@ -28,6 +28,7 @@ struct GenricCard: View {
             .padding()
             .frame(maxWidth:400)
             .background(.ultraThinMaterial)
+            .opacity(0.89)
             .cornerRadius(20)
         }
         .shadow(radius: 5)

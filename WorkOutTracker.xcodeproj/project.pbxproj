@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F9F6AC72DEA2F910085F568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F6AC52DEA2F910085F568 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		9F46EB7F2DE9682E003140D3 /* WorkOutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WorkOutTracker.app; path = "/Users/bryang/Desktop/Xcode/WorkOutTracker/build/Debug-iphoneos/WorkOutTracker.app"; sourceTree = "<absolute>"; };
+		9F9F6AB72DEA2F910085F568 /* WorkOutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9F6AC52DEA2F910085F568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				9FCDB0382DE918AE00C8B6C1 /* WorkOutTracker */,
+				9F9F6AB72DEA2F910085F568 /* WorkOutTracker.app */,
+				9F9F6AC52DEA2F910085F568 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +65,7 @@
 			packageProductDependencies = (
 			);
 			productName = WorkOutTracker;
-			productReference = 9F46EB7F2DE9682E003140D3 /* WorkOutTracker.app */;
+			productReference = 9F9F6AB72DEA2F910085F568 /* WorkOutTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +107,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9F6AC72DEA2F910085F568 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

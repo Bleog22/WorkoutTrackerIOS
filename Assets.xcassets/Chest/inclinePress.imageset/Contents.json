@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "young-man-trains-his-body-stay-fit-have-defined-muscles.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

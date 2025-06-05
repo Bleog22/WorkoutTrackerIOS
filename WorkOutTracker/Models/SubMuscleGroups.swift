@@ -60,22 +60,20 @@ let activitiesArray: [Activity] = [
     //
     Activity(name: "Bench Press", image: "benchPress", group: .chest),
     Activity(name: "Incline Press", image: "inclinePress",group: .chest),
-    Activity(name: "Decline Press", image: "declinePress",group: .chest),
-    Activity(name: "Chest Fly", image: "chestFly",group: .chest),
-    Activity(name: "Push-ups", image: "pushup",group: .chest),
-    Activity(name: "Cable Cross-Over", image: "crossOver",group: .chest),
+    Activity(name: "Push-ups", image: "pushup 1",group: .chest),
+    Activity(name: "Fly", image: "crossOver",group: .chest),
     Activity(name: "Dips", image: "dips",group: .chest),
     Activity(name: "Pec Deck", image: "pecDeck",group: .chest),
     
     //
     //Back Section
     //
-    Activity(name: "Pull-ups/ Chin-ups", image: "pullup", group: .back),
-    Activity(name: "Lat Pulldown", image: "latPulldown", group: .back),
+    Activity(name: "Pull-ups", image: "pullup", group: .back),
+    Activity(name: "Lat Pulldown", image: "latpulldown1", group: .back),
     Activity(name: "Row", image: "row", group: .back),
-    Activity(name: "Face Pulls", image: "facePulls", group: .back),
+//    Activity(name: "Face Pulls", image: "facePulls", group: .back),
     Activity(name: "Deadlift", image: "deadlift", group: .back),
-    Activity(name: "Back Extension", image: "backExtension", group: .back),
+//    Activity(name: "Back Extension", image: "backExtension", group: .back),
     
     //
     //Shoulder Section
@@ -83,46 +81,43 @@ let activitiesArray: [Activity] = [
     Activity(name: "Overhead Press", image: "overheadPress", group: .shoulder),
     Activity(name: "Lateral Raises", image: "lateralRaise", group: .shoulder),
     Activity(name: "Front Raises", image: "frontRaise", group: .shoulder),
-    Activity(name: "Shrugs", image: "shrugs", group: .shoulder),
+    Activity(name: "Shrugs", image: "shrug", group: .shoulder),
     
     //
     //Arms Section
     //
-    Activity(name: "Bicep Curls", image: "bicepCurls", group: .arms),
+    Activity(name: "Bicep Curls", image: "bicepCurl", group: .arms),
     Activity(name: "Hammer Curl", image: "hammerCurl", group: .arms),
     Activity(name: "Preacher Curl", image: "preacherCurl", group: .arms),
     Activity(name: "Tricep Pushdown", image: "tricepPushdown", group: .arms),
     Activity(name: "Tricep Extension", image: "tricepExtension", group: .arms),
-    Activity(name: "Skull Crusher", image: "skullCrushers", group: .arms),
+    Activity(name: "Skull Crusher", image: "skullCrusher", group: .arms),
     
     //
     //Legs Section
     //
     Activity(name: "Barbell Squat", image: "barbellSquat", group: .legs),
-    Activity(name: "Deadlift", image: "deadlift", group: .legs),
     Activity(name: "Leg Press", image: "legPress", group: .legs),
-    Activity(name: "Goblet Squat", image: "gobletSquat", group: .legs),
     Activity(name: "Leg Extension", image: "legExtension", group: .legs),
     Activity(name: "Hamstring Curl", image: "hamstringCurl", group: .legs),
     Activity(name: "Calf Raises", image: "calfRaises", group: .legs),
-    Activity(name: "Bulgarian Split Squat", image: "splitSquat", group: .legs),
+    Activity(name: "Split Squat", image: "splitSquat", group: .legs),
     
     //
     //Core Section
     //
     Activity(name: "Plank", image: "plank", group: .core),
-    Activity(name: "Sit-ups", image: "Sit-ups", group: .core),
+    Activity(name: "Sit-ups", image: "sitUps", group: .core),
     Activity(name: "Russian Twist", image: "russianTwist", group: .core),
     Activity(name: "Leg Raise", image: "legRaise", group: .core),
-    Activity(name: "Crunches", image: "crunch", group: .core),
+    Activity(name: "Crunches", image: "crunches", group: .core),
     Activity(name: "Ab Wheel", image: "abWheel", group: .core),
-    Activity(name: "Mountain Climbers", image: "mountainClimbers", group: .core),
     
     //
     //Other Section
     //
     Activity(name: "Yoga", image: "yoga", group: .other),
-    Activity(name: "Stretching", image: "stretching", group: .other),
+    Activity(name: "Stretching", image: "stretching1", group: .other),
     Activity(name: "Pilates", image: "pilates", group: .other),
     Activity(name: "Foam Rolling", image: "foamRolling", group: .other)
     
